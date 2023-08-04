@@ -19,3 +19,9 @@ class TestSpacecraft(unittest.TestCase):
         spacecraft = SpaceCraft(0,0,0,'N')
         spacecraft.move_backward()
         myPos.assertEqual(spacecraft.y,-1)
+
+    def test_left_turn(myPos):
+        spacecraft = SpaceCraft(0,0,0,'N')
+        spacecraft.turn_left()
+        myPos.assertEqual(spacecraft.direction,'W')
+        

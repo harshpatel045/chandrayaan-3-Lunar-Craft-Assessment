@@ -33,3 +33,13 @@ class SpaceCraft:
             myPos.z-=1
         elif myPos.direction=='Down':
             myPos.z+=1
+
+    def turn_left(myPos):
+        if myPos.direction=='N':
+            myPos.direction='W'
+        elif myPos.direction=='S':
+            myPos.direction=="E"
+        elif myPos.direction=='E':
+            myPos.direction='N'
+        elif myPos.direction=='W':
+            myPos.direction='S'
