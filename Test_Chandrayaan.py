@@ -14,3 +14,8 @@ class TestSpacecraft(unittest.TestCase):
         spacecraft = SpaceCraft(0,0,0,'N')
         spacecraft.move_forward()
         myPos.assertEqual(spacecraft.y,1)
+
+    def test_backward_move(myPos):
+        spacecraft = SpaceCraft(0,0,0,'N')
+        spacecraft.move_backward()
+        myPos.assertEqual(spacecraft.y,-1)
