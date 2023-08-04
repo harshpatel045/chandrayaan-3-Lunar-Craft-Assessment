@@ -21,3 +21,8 @@ passed all four!!!
 It's right turn
 Same as above just inverse!!
 passed all five!!!
+
+5th Test
+It's for Up
+just make direction Up
+passed all six!!
