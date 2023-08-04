@@ -43,6 +43,10 @@ class SpaceCraft:
             myPos.direction='N'
         elif myPos.direction=='W':
             myPos.direction='S'
+        elif myPos.direction=='Up':
+            myPos.direction='W'
+        elif myPos.direction=='Down':
+            myPos.direction='E'
 
     def turn_right(myPos):
         if myPos.direction=='N':
@@ -53,14 +57,30 @@ class SpaceCraft:
             myPos.direction='S'
         elif myPos.direction=='W':
             myPos.direction='N'
+        elif myPos.direction=='Up':
+            myPos.direction='W'
+        elif myPos.direction=='Down':
+            myPos.direction='E'
 
     def turn_up(myPos):
-        if myPos.direction in ['N','E','W','S']:
+        if myPos.direction=='N':
             myPos.direction='Up'
+        elif myPos.direction=='S':
+            myPos.direction='Down'
+        elif myPos.direction=='E':
+            myPos.direction='Up'
+        elif myPos.direction=='W':
+            myPos.direction='Down'
 
     def turn_down(myPos):
-        if(myPos.direction in ['N','E','W','S']):
+        if myPos.direction=='N':
             myPos.direction='Down'
+        elif myPos.direction=='S':
+            myPos.direction='Up'
+        elif myPos.direction=='E':
+            myPos.direction='Down'
+        elif myPos.direction=='W':
+            myPos.direction='Up'
 
     def execute_commands(myPos,commands):
         for command in commands:

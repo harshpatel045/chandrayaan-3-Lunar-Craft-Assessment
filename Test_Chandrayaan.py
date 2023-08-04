@@ -49,3 +49,5 @@ class TestSpacecraft(unittest.TestCase):
         myPos.assertEqual(spacecraft.z,-1)
         myPos.assertEqual(spacecraft.direction,'W')
 
+if __name__ == '__main__':
+    unittest.main(exit=False)

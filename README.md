@@ -31,3 +31,7 @@ passed all six!!
 It's for Down
 just make direction Down
 passed all seven!!
+
+7th Test
+It's about commands
+Done!!!
