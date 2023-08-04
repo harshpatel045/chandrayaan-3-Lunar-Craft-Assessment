@@ -38,8 +38,18 @@ class SpaceCraft:
         if myPos.direction=='N':
             myPos.direction='W'
         elif myPos.direction=='S':
-            myPos.direction=="E"
+            myPos.direction="E"
         elif myPos.direction=='E':
             myPos.direction='N'
         elif myPos.direction=='W':
             myPos.direction='S'
+
+    def turn_right(myPos):
+        if myPos.direction=='N':
+            myPos.direction='E'
+        elif myPos.direction=='S':
+            myPos.direction="W"
+        elif myPos.direction=='E':
+            myPos.direction='S'
+        elif myPos.direction=='W':
+            myPos.direction='N'
