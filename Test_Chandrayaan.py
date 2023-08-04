@@ -9,3 +9,8 @@ class TestSpacecraft(unittest.TestCase):
         myPos.assertEqual(spacecraft.y,0)
         myPos.assertEqual(spacecraft.z,0)
         myPos.assertEqual(spacecraft.direction,'N')
+
+    def test_forward_move(myPos):
+        spacecraft = SpaceCraft(0,0,0,'N')
+        spacecraft.move_forward()
+        myPos.assertEqual(spacecraft.y,1)
