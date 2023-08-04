@@ -57,3 +57,7 @@ class SpaceCraft:
     def turn_up(myPos):
         if myPos.direction in ['N','E','W','S']:
             myPos.direction='Up'
+
+    def turn_down(myPos):
+        if(myPos.direction in ['N','E','W','S']):
+            myPos.direction='Down'

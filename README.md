@@ -26,3 +26,8 @@ passed all five!!!
 It's for Up
 just make direction Up
 passed all six!!
+
+6th Test
+It's for Down
+just make direction Down
+passed all seven!!
