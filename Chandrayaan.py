@@ -61,3 +61,18 @@ class SpaceCraft:
     def turn_down(myPos):
         if(myPos.direction in ['N','E','W','S']):
             myPos.direction='Down'
+
+    def execute_commands(myPos,commands):
+        for command in commands:
+            if command=='f':
+                myPos.move_forward()
+            elif command=='b':
+                myPos.move_backward()
+            elif command=='l':
+                myPos.turn_left()
+            elif command=='r':
+                myPos.turn_right()
+            elif command=='u':
+                myPos.turn_up()
+            elif command=='d':
+                myPos.turn_down()

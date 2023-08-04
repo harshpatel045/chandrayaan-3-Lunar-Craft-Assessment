@@ -39,3 +39,13 @@ class TestSpacecraft(unittest.TestCase):
         spacecraft = SpaceCraft(0,0,0,'N')
         spacecraft.turn_down()
         myPos.assertEqual(spacecraft.direction,'Down')
+
+    def test_commands(myPos):
+        spacecraft = SpaceCraft(0,0,0,'N')
+        commands = ['f','r','u','b','l']
+        spacecraft.execute_commands(commands)
+        myPos.assertEqual(spacecraft.x,0)
+        myPos.assertEqual(spacecraft.y,1)
+        myPos.assertEqual(spacecraft.z,-1)
+        myPos.assertEqual(spacecraft.direction,'W')
+
